@@ -46,6 +46,14 @@ app.get("/listings/:id", async (req, res)=>{
     res.render("listings/show.ejs", {listing});
 })
 
+app.post("/listings", async (req, res) =>{
+    //let{title, description, image, price, country, location} = req.body;
+    //let listing = req.body.listing;
+    const newListing = Listing(req.body.listing)
+    await newListing.save();
+    res.redirect("/listings");
+    
+})
 
 
 // app.get("/testListing", async (req, res)=>{
