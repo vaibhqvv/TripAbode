@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const path = require("path");
 
-
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
 main()
@@ -34,6 +33,11 @@ app.get("/listings", async (req, res) => {
     res.render("listings/index.ejs", {allListings});
 })
 
+//New Route : Create
+app.get("/listings/new", (req, res)=>{
+    res.render("listings/new.ejs")
+})
+
 //Show Route : Read
 app.get("/listings/:id", async (req, res)=>{
     let {id} = req.params; // to extract the id
@@ -41,6 +45,8 @@ app.get("/listings/:id", async (req, res)=>{
     const listing = await Listing.findById(id) // we get the data based on id
     res.render("listings/show.ejs", {listing});
 })
+
+
 
 // app.get("/testListing", async (req, res)=>{
 //     let sampleListing = new Listing({
