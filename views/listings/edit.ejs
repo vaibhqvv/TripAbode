@@ -10,11 +10,7 @@
     <form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
         <input name="listing[title]" value="<%= listing.title %>" type="text">
         <br><br>
-        <textarea 
-            name="listing[description]" 
-            placeholder="<%= listing.description %>"
-            value="<%= listing.description %>">
-        </textarea>
+        <textarea name="listing[description]" ><%= listing.description %>"</textarea>
         <br><br>
         <input name="listing[image]" value="<%= listing.image %>" type="text">
         <br><br>
