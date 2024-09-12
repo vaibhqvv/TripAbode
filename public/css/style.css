@@ -3,19 +3,23 @@ body{
   font-optical-sizing: auto !important;
   font-weight: 400 !important;
   font-style: normal !important;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
 }
 
+.container{
+    flex: 1;
+}
 /*Navbar*/
 .navbar {
     height: 5rem;
     background-color: white;
 }
-
 .fa-compass{
-    color: #fe424d;
+    color:#6d7047;
     font-size: 2rem;
 }
-
 .nav-link{
     color: #222222 !important;
 }
@@ -73,3 +77,23 @@ body{
 .card-text{
     font-weight: 400 ;
 }
+
+.listing-link{
+    text-decoration: none;
+}
+
+/*Card Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+.add-btn{
+    background-color: #6d7047 !important;
+    border: none !important;
+}
+
