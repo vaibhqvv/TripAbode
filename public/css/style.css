@@ -97,3 +97,22 @@ body{
     border: none !important;
 }
 
+/* Edit Page */
+.edit-btn{
+    background-color: #6d7047 !important;
+    border: none !important;
+}
+
+/*Show page */
+.show-img{
+    height: 50vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}

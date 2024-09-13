@@ -1,0 +1,5 @@
+express
+mongoose
+ejs
+method-override
+ejs-mate
