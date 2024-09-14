@@ -5,7 +5,7 @@ body{
   font-style: normal !important;
   display: flex;
   flex-direction: column;
-  min-width: 100vh;
+  min-height: 100vh;
 }
 
 .container{
@@ -41,6 +41,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 0;
+    position: relative
 }
 
 .f-info-socials i{
