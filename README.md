@@ -1,11 +1,12 @@
 # TripAbode: A Vacation Rental Platform
 
-**TripAbode** is a user-friendly vacation rental platform that allows users to list, explore, and manage vacation properties. It enables users to add details such as location, price, and descriptions for each property, making it easy for anyone to find their next vacation stay.
+**TripAbode** is a user-friendly vacation and travel blog web application that facilitates listings of villas and hotels across different cities globally and allows users to share their travel experiences.
 
 ## Features
 
 - **Property Listings**: Users can create detailed property listings with a title, location, price, description, and country.
 - **CRUD Operations for Listings**: Users can create, view, update, and delete listings.
+- **Review Sharing**: Users can share their travel experiences.
 - **Future Enhancements**: Features like search, filters, and image uploads will be added.
 
 ## Installation and Setup
