@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 8080;
 const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const path = require("path");
@@ -113,6 +114,6 @@ app.use((err, req, res, next) => {
     //res.status(statusCode).send(message);
 });
 
-app.listen(8080, ()=>{
+app.listen(PORT, ()=>{
     console.log("server is listening on port 8080");
 });
